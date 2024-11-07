@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ciberseguridad</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000; 
+            color: #00ff00; 
+        }
+        header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .banner {
+            width: 100%;
+            height: 300px; 
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: auto; 
+            display: block;
+        }
+        .banner-text {
+            position: absolute;
+            top: 20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            color: #00ff00;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Aumento el espacio entre las secciones */
+}
+.section {
+    background: url('https://m.media-amazon.com/images/I/71xJJ9FRJ9L.jpg') no-repeat center center; 
+    background-size: cover; 
+    border: 1px solid #00ff00; 
+    border-radius: 8px;
+    margin: 20px; /* Aumento el margen para que las secciones no se vean amontonadas */
+    padding: 20px; /* Aumento el padding para que haya más espacio dentro */
+    width: 250px; /* Aumento el ancho a 300px */
+    height: 300px; /* Aumento la altura a 350px */
+    text-align: center;
+    transition: transform 0.3s;
+    color: #ffffff; 
+    position: relative; 
+}
+.section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+    z-index: 0; 
+}
+
+.section h2, .section p {
+    position: relative;
+    z-index: 1;
+}
+.section:hover {
+    transform: scale(1.05); /* Le da un efecto de hover */
+}
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #222;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="https://cdn-gx-aria-media.osp.opera.software/images/7e7e17bb-8695-11ef-b802-bb468b03a774/1728516245012/sample_0.jpg" alt="Banner" />
+            <div class="banner-text">
+                Bienvenido a Piña Security
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="section" id="servicio1" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/informacion.html')">
+            <h2>Información personal</h2>
+            <p>En esta sección se podrá ver qué es la información personal y qué se considera como información personal.</p>
+        </div>
+        <div class="section" id="servicio2" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/tipos%20de%20ciberataques.html')">
+            <h2>Tipos de ciberataques</h2>
+            <p>En esta seccion encontraras todos los tipos de ciberataques.</p>
+        </div>
+        <div class="section" id="servicio3" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/Consejos%20de%20ciberseguridad.html')">
+            <h2>Consejos de ciberseguridad</h2>
+            <p>En esta seccion podras aprender a como protegerte en internet  se te daran consejos de proteccion cibernetica.</p>
+        </div>
+        <div class="section" id="servicio4" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/que%20es%20la%20ciberseguridad.html')">
+            <h2>Que es la ciberseguridad 
+            </h2>
+            <p>En esta seccion aprenderas que es la ciberseguridad</p>
+        </div>
+        <div class="section" id="servicio6" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/quiz.html')">
+            <h2>Quiz sobre ciberseguridad</h2>
+            <p>En este apartado podrás hacer un quiz para saber qué tan alto está tu conocimiento sobre ciberseguridad.</p>
+        </div>
+        <div class="section" id="servicio7" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/simulador.html')">
+            <h2>Simulador de Phishing</h2>
+            <p>Este es un simulador de Phishing para que puedas medir tu nivel de detección de un ataque de Phishing.</p>
+        </div>
+        <div class="section" id="servicio7" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/Juego.html')">
+            <h2>Juego de adivinanza</h2>
+            <p>La dinamica de este juego es adivinar que tipo de amenaza es la que te estan presentando en la pantalla</p>
+        </div>
+        <div class="section" id="servicio7" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/Juego2.html')">
+            <h2>Juego sobre situaciones de ciberseguridad en la vida real</h2>
+            <p>En este apartado veras un juego que basicamente conciste en elegir decisiones sobre problemas que pueden ser comunes que tienen que ver con la ciberseguridad</p>
+        </div>
+        <div class="section" id="servicio7" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/Pagina%20de%20rese%C3%B1as.html')">
+            <h2>Reseñas</h2>
+            <p>En esta seccion ustedes como usuarios me podran dejar recomendaciones para mejorar la pagina</p>
+        </div>
+        <div class="section" id="referencias" onclick="redirect('file:///C:/Users/felipe/Desktop/Producto%20monografia/Referencias.html')">
+            <h2>Referencias</h2>
+            <p>Aquí puedes ver todas las referencias de donde saqué la información.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;2024 Piña records.</p>
+        <p>Version 1.1</p>
+    </footer>
+
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
